@@ -1,0 +1,322 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Feature Detox Test",
+    "line": 2,
+    "id": "feature-detox-test",
+    "tags": [
+      {
+        "name": "@TagDetox",
+        "line": 1
+      }
+    ],
+    "uri": "e2e/features/detox.feature",
+    "elements": [
+      {
+        "id": "feature-detox-test;detox-test-example-1",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Detox Test Example 1",
+        "tags": [
+          {
+            "name": "@TagDetox",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I should have welcome screen",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I should count to \"1\" if pressed once",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 586000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should wtrite \"Hello Wold\" into TextInput",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2920000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I should scroll the name by",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1586000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should scroll till list end",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should swipe scroll",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1182000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-detox-test;detox-test-example-2",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Detox Test Example 2",
+        "tags": [
+          {
+            "name": "@TagDetox",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 885000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I write \"Hello Worl\" in the input text",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1472000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should the result \"Hello Worl\" in the input text",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-detox-test;detox-test-example-3",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Detox Test Example 3",
+        "tags": [
+          {
+            "name": "@TagDetox",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 882000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I write \"Felipe\" in the input text",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1029000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should the result \"Felipe\" in the input text",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-detox-test;detox-test-example-3",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Detox Test Example 3",
+        "tags": [
+          {
+            "name": "@TagDetox",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 886000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I write \"Juan\" in the input text",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 809000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should the result \"Pedro\" in the input text",
+            "match": {
+              "location": "e2e/features/stepDefinitions/detoxStep.js:35"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 36000000,
+              "error_message": "Error: An assertion failed.\nException with Assertion: {\n  \"Assertion Criteria\":  \"assertWithMatcher:(((kindOfClass('UILabel') || kindOfClass('UITextField') || kindOfClass('UITextView')) && hasText('Pedro')) || (kindOfClass('RCTTextView') && an object with accessibilityLabel \"Pedro\"))\",\n  \"Element Matcher\":  \"((!(kindOfClass('RCTScrollView')) && ((respondsToSelector(accessibilityIdentifier) && accessibilityID('input')) && !(kindOfClass('UIAccessibilityTextFieldElement')))) || (((kindOfClass('UIView') || respondsToSelector(accessibilityContainer)) && parentThatMatches(kindOfClass('RCTScrollView'))) && ((kindOfClass('UIView') || respondsToSelector(accessibilityContainer)) && parentThatMatches(((respondsToSelector(accessibilityIdentifier) && accessibilityID('input')) && !(kindOfClass('UIAccessibilityTextFieldElement')))))))\"\n}\n\n\nError Trace: [\n  {\n    \"Description\":  \"Assertion with matcher [M] failed: UI element [E] failed to match the following matcher(s): [S]\",\n    \"Description Glossary\":    {\n      \"M\":  \"(((kindOfClass('UILabel') || kindOfClass('UITextField') || kindOfClass('UITextView')) && hasText('Pedro')) || (kindOfClass('RCTTextView') && an object with accessibilityLabel \"Pedro\"))\",\n      \"E\":  \"<RCTUITextField:0x7ff45885bc00; AX=N; AX.id='input'; AX.value='Juan'; AX.frame={{49, 148.5}, {298, 38}}; AX.activationPoint={80, 156.75}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{1, 1}, {298, 38}}; alpha=1; text='Juan'>\",\n      \"S\":  \"hasText('Pedro'), kindOfClass('RCTTextView')\"\n    },\n    \"Error Domain\":  \"com.google.earlgrey.ElementInteractionErrorDomain\",\n    \"Error Code\":  \"3\",\n    \"File Name\":  \"GREYAssertions.m\",\n    \"Function Name\":  \"+[GREYAssertions grey_createAssertionWithMatcher:]_block_invoke\",\n    \"Line\":  \"75\"\n  }\n]\n\nHierarchy: <UIWindow:0x7ff456f114e0; AX=N; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |--<UITransitionView:0x7ff459913200; AX=N; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |  |--<UIDropShadowView:0x7ff459914c70; AX=N; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |  |  |--<RCTRootView:0x7ff459811930; AX=N; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |  |  |  |--<RCTRootContentView:0x7ff456f0d160; AX=N; AX.label='Welcome to React Native 0 Start Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page Start'; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |  |  |  |  |--<RCTView:0x7ff456c15730; AX=N; AX.label='Welcome to React Native 0 Start Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page Start'; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |  |  |  |  |  |--<RCTView:0x7ff456c15490; AX=N; AX.label='Welcome to React Native 0 Start Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page Start'; AX.frame={{0, 0}, {414, 896}}; AX.activationPoint={207, 448}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 896}}; opaque; alpha=1>\n  |  |  |  |  |  |  |--<RCTView:0x7ff456c151f0; AX=N; AX.label='Welcome to React Native 0 Start Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page Start'; AX.frame={{0, 0}, {414, 325}}; AX.activationPoint={207, 162.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {414, 325}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c277d0; AX=N; AX.label='Welcome to React Native 0 Start Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page Start'; AX.frame={{0, 32}, {414, 293}}; AX.activationPoint={207, 178.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 32}, {414, 293}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c27530; AX=N; AX.label='0 Start Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page Start'; AX.frame={{24, 93}, {366, 232}}; AX.activationPoint={207, 209}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{24, 61}, {366, 232}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c29ac0; AX=Y; AX.id='startButton'; AX.label='Start'; AX.frame={{48, 287.5}, {318, 37.5}}; AX.activationPoint={207, 306.25}; AX.traits='UIAccessibilityTraitButton'; AX.focused='N'; frame={{24, 194.5}, {318, 37.5}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c29820; AX=N; AX.label='Start'; AX.frame={{48, 287.5}, {318, 37.5}}; AX.activationPoint={207, 306.25}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {318, 37.5}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff456c1d410; AX=Y; AX.label='Start'; AX.frame={{56, 295.5}, {302, 22}}; AX.activationPoint={207, 306.5}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{8, 8}, {302, 22}}; alpha=1>\n  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c1bbe0; AX=N; AX.label='Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page'; AX.frame={{48, 187.5}, {254.5, 100}}; AX.activationPoint={175.25, 237.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{24, 94.5}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |--<RCTScrollView:0x7ff456c1ddc0; AX=N; AX.id='list'; AX.label='Felipe Ninochka Benjamin Jeannette Vertical scroll bar, 4 pages Horizontal scroll bar, 1 page'; AX.frame={{48, 187.5}, {254.5, 100}}; AX.activationPoint={175.25, 237.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |--<RCTCustomScrollView:0x7ff457001000; AX=N; AX.frame={{48, 187.5}, {254.5, 100}}; AX.activationPoint={175.25, 237.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |--<_UIScrollViewScrollIndicator:0x7ff456e47870; AX=N; AX.label='Horizontal scroll bar, 1 page'; AX.value='0%'; AX.frame={{48, 254.5}, {254.5, 30}}; AX.activationPoint={27, 283}; AX.traits='UIAccessibilityTraitAdjustable'; AX.focused='N'; frame={{-39, 94}, {36, 3}}; opaque; alpha=0>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<UIView:0x7ff456d39d60; AX=N; AX.frame={{9, 281.5}, {36, 3}}; AX.activationPoint={27, 283}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {36, 3}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |--<_UIScrollViewScrollIndicator:0x7ff4599374f0; AX=N; AX.label='Vertical scroll bar, 4 pages'; AX.value='0%'; AX.frame={{269.5, 187.5}, {30, 100}}; AX.activationPoint={298, 166.5}; AX.traits='UIAccessibilityTraitAdjustable'; AX.focused='N'; frame={{248.5, -39}, {3, 36}}; opaque; alpha=0>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<UIView:0x7ff45991a340; AX=N; AX.frame={{296.5, 148.5}, {3, 36}}; AX.activationPoint={298, 166.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {3, 36}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTScrollContentView:0x7ff456c1d9d0; AX=N; AX.label='Felipe Ninochka Benjamin Jeannette'; AX.frame={{48, 187.5}, {254.5, 400}}; AX.activationPoint={175.25, 387.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {254.5, 400}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c09f90; AX=N; AX.label='Jeannette'; AX.frame={{48, 487.5}, {254.5, 100}}; AX.activationPoint={175.25, 537.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 300}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff456c15bc0; AX=Y; AX.label='Jeannette'; AX.frame={{48, 487.5}, {254.5, 100}}; AX.activationPoint={175.25, 537.5}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c097e0; AX=N; AX.label='Benjamin'; AX.frame={{48, 387.5}, {254.5, 100}}; AX.activationPoint={175.25, 437.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 200}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff456c178c0; AX=Y; AX.label='Benjamin'; AX.frame={{48, 387.5}, {254.5, 100}}; AX.activationPoint={175.25, 437.5}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c03310; AX=N; AX.label='Ninochka'; AX.frame={{48, 287.5}, {254.5, 100}}; AX.activationPoint={175.25, 337.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 100}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff45992d220; AX=Y; AX.label='Ninochka'; AX.frame={{48, 287.5}, {254.5, 100}}; AX.activationPoint={175.25, 337.5}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456c1aa00; AX=N; AX.label='Felipe'; AX.frame={{48, 187.5}, {254.5, 100}}; AX.activationPoint={175.25, 237.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff456c2db70; AX=Y; AX.label='Felipe'; AX.frame={{48, 187.5}, {254.5, 100}}; AX.activationPoint={175.25, 237.5}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{0, 0}, {254.5, 100}}; alpha=1>\n  |  |  |  |  |  |  |  |  |  |--<RCTSinglelineTextInputView:0x7ff456f2b1d0; AX=N; AX.frame={{48, 147.5}, {300, 40}}; AX.activationPoint={198, 167.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{24, 54.5}, {300, 40}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |--<RCTUITextField:0x7ff45885bc00; AX=N; AX.id='input'; AX.value='Juan'; AX.frame={{49, 148.5}, {298, 38}}; AX.activationPoint={80, 156.75}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{1, 1}, {298, 38}}; alpha=1; text='Juan'>\n  |  |  |  |  |  |  |  |  |  |  |  |--<UIFieldEditor:0x7ff4590a5400; AX=N; AX.value='Juan'; AX.frame={{59, 158.5}, {278, 18}}; AX.activationPoint={198, 167.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{10, 10}, {278, 18}}; alpha=1; text='Juan'>\n  |  |  |  |  |  |  |  |  |  |  |  |  |--<_UITextFieldCanvasView:0x7ff456f29580; AX=N; AX.frame={{59, 158.5}, {278, 18}}; AX.activationPoint={198, 167.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {278, 18}}; alpha=1; UIE=N>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<UITextSelectionView:0x7ff456e41230; AX=N; AX.frame={{59, 158.5}, {0, 0}}; AX.activationPoint={59, 158.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {0, 0}}; opaque; alpha=1; UIE=N>\n  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |--<UIView:0x7ff456c18450; AX=N; AX.frame={{89, 158.5}, {2, 17.5}}; AX.activationPoint={90, 167.25}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{30, 0}, {2, 17.5}}; opaque; alpha=1; UIE=N>\n  |  |  |  |  |  |  |  |  |  |  |  |--<UIAccessibilityTextFieldElement:0x6000025c9100; AX=Y; AX.id='input'; AX.value='Juan'; AX.frame={{49, 148.5}, {298, 38}}; AX.activationPoint={80, 156.75}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'>\n  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456e28760; AX=N; AX.id='counterView'; AX.label='0 Start'; AX.frame={{48, 93}, {318, 54.5}}; AX.activationPoint={207, 120.25}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{24, 0}, {318, 54.5}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456e316f0; AX=Y; AX.id='startButton'; AX.label='Start'; AX.frame={{48, 110}, {318, 37.5}}; AX.activationPoint={207, 128.75}; AX.traits='UIAccessibilityTraitButton'; AX.focused='N'; frame={{0, 17}, {318, 37.5}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |--<RCTView:0x7ff456e31340; AX=N; AX.label='Start'; AX.frame={{48, 110}, {318, 37.5}}; AX.activationPoint={207, 128.75}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {318, 37.5}}; opaque; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff456e30950; AX=Y; AX.label='Start'; AX.frame={{56, 118}, {302, 22}}; AX.activationPoint={207, 129}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{8, 8}, {302, 22}}; alpha=1>\n  |  |  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff45981fbc0; AX=Y; AX.id='runningState'; AX.label='0'; AX.frame={{48, 93}, {318, 17.5}}; AX.activationPoint={207, 101.75}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{0, 0}, {318, 17.5}}; alpha=1>\n  |  |  |  |  |  |  |  |  |--<RCTTextView:0x7ff459805f90; AX=Y; AX.id='welcome'; AX.label='Welcome to React Native'; AX.frame={{24, 32}, {366, 29.5}}; AX.activationPoint={207, 46.75}; AX.traits='UIAccessibilityTraitStaticText'; AX.focused='N'; frame={{24, 0}, {366, 29.5}}; alpha=1>\n    at Client.execute (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/node_modules/detox/src/client/Client.js:92:28)\n    at InvocationManager.execute (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/node_modules/detox/src/invoke.js:11:39)\n    at MatcherAssertionInteraction.execute (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/node_modules/detox/src/ios/expect.js:200:35)\n    at ExpectElement.toHaveText (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/node_modules/detox/src/ios/expect.js:375:114)\n    at Object.module.exports.verifyText (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/e2e/features/pages/basePage.js:24:55)\n    at Object.module.exports.verifyTextInputWelcome (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/e2e/features/pages/detoxPages.js:35:19)\n    at World.<anonymous> (/Users/felipe.fuenzalida/Globant/course-detox/detox-cucumber/e2e/features/stepDefinitions/detoxStep.js:36:21)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/features/support/init.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
