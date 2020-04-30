@@ -1,54 +1,90 @@
 ---
-format_version: '4'
+format_version: 1.1.0
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
-project_type: other
+trigger_map:
+- push_branch: "*"
+  workflow: tests
 workflows:
-  ci:
+  _tests_setup:
     steps:
-    - yarn@0.0.4: {}
-    - yarn@0.0.4:
+    - activate-ssh-key: {}
+    - git-clone:
         inputs:
-          - command: run test
-      - npm@0.9.0:
-          inputs:
-            - command: install -g detox-cli
-            title: Install Detox CLI
-      - npm@0.9.0:
-          inputs:
-            - command: install -g react-native-cli
-            title: Install React Native CLI
-      - npm@0.9.0:
-          inputs:
-            - command: install cucumber
-            title: Install Cucumber     
-      - script@1.1.5:
-          title: Install Detox Utils
-          inputs:
-            - content: |-
-                #!/usr/bin/env bash
-                # fail if any commands fails
-                set -e
-                # debug log
-                set -x
-                brew tap wix/brew
-                brew install applesimutils --HEAD
-      - script@1.1.5:
-          inputs:
-            - content: |-
-                #!/usr/bin/env bash
-                # fail if any commands fails
-                set -e
-                # debug log
-                set -x 
-                detox build -c ios.sim.debug
-            title: Detox - Build Release App
-      - script@1.1.5:
-          inputs:
-            - content: |-
-                #!/usr/bin/env bash
-                # fail if any commands fails
-                set -e
-                # debug log
-                set -x
-                node_modules/.bin/cucumber-js -f json:./e2e/report/cucumber_report.json ./e2e/features --configuration android.emu.debug
-            title: Detox - Run E2E Tests
+        - clone_depth: ''
+        title: Git Clone Repo
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            npm cache verify
+            npm install
+        title: Install NPM Packages
+    before_run: 
+    after_run: 
+  _detox_tests:
+    before_run: []
+    after_run:
+    - _tests_slack_message
+    steps:
+    - npm:
+        inputs:
+        - command: install -g detox-cli
+        title: Install Detox CLI
+    - npm:
+        inputs:
+        - command: install -g react-native-cli
+        title: Install React Native CLI
+    - npm:
+        inputs:
+        - command: install cucumber
+        title: Install Cucumber
+    - cocoapods-install:
+        inputs:
+        - is_update_cocoapods: 'false'
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            brew tap facebook/fb
+            export CODE_SIGNING_REQUIRED=NO
+            brew install fbsimctl
+            brew tap wix/brew
+            brew install applesimutils --HEAD
+        title: Install Detox Utils
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            detox build --configuration ios.sim.release
+        title: Detox - Build Debug App
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            node_modules/.bin/cucumber-js -f json:./e2e/report/cucumber_report.json ./e2e/features --configuration ios.sim.release --cleanup
+        title: Detox - Run E2E Tests
+  tests:
+    before_run:
+    - _tests_setup
+    - _detox_tests
+    after_run:
+    - _tests_slack_message
+  _tests_slack_message:
+    before_run: []
+    steps:
+    - slack:
+        inputs:
+        - webhook_url: https://hooks.slack.com/services/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
+        - channel: "#builds"
+        - from_username_on_error: Bitrise CI - Tests Shall Not Pass!!
+        - from_username: Bitrise CI - Cucumber Tests Passed
+        - message: |-
+            *Build succeeded*: $BITRISE_GIT_MESSAGE
+            *Branch*: $BITRISE_GIT_BRANCH
+        - message_on_error: |-
+            *Build failed*: $BITRISE_GIT_MESSAGE
+            *Branch*: $BITRISE_GIT_BRANCH
+        - emoji: ":sobre_con_flecha:"
+        - text: Ejecución Build
+        - emoji_on_error: ":bicho:"
+        title: Slack - Send Build Status
